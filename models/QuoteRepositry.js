@@ -60,12 +60,6 @@ export class QuoteRepository {
                         }
                     }
                 },
-                {
-                    $project: {
-                        name: 2,
-                        score: { $meta: "searchScore" }
-                    }
-                },
                 { $limit: 10 }
 
             ];

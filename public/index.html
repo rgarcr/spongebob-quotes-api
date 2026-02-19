@@ -8,11 +8,14 @@
 <body>
     <h1>Spongebob Quotes API Instructions</h1>
     <h3>These are all GET requests that return JSON</h3>
-    <p>To get quotes use url: <span class="url"></span>/api/quotes</p>
-    <p>To get random quote use url: <span class="url"></span>/api/quotes/random</p>
-    <p>To get quote by name use url: <span class="url"></span>?name=value</p>
+    <p>To get quotes use url: <a class="url" href="https://spongebob-quotes.onrender.com/api/quotes">https://spongebob-quotes.onrender.com//api/quotes</a></p>
+    <p>To get random quote use url: <a class="url" href="https://spongebob-quotes.onrender.com/api/quotes/random">https://spongebob-quotes.onrender.com/api/quotes/random</a></p>
+    <p>To get quote by name use url where query parameter name=character will be a name of a character: <a class="url" href="https://spongebob-quotes.onrender.com/api/quotes/search/?name=spongebob">https://spongebob-quotes.onrender.com/api/quotes/search/?name=spongebob</a></p>
 <script>
-    document.querySelectorAll(".url").forEach(node => node.textContent=window.location.origin);
+    // document.querySelectorAll(".url").forEach(node =>{
+    //     node.textContent=window.location.origin;
+    //     node.href=window.location.origin
+    //     });
 </script>
 </body>
 </html>
