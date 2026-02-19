@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spongebob Quotes API Instructions</h1>
+    <h3>These are all GET requests that return JSON</h3>
+    <p>To get quotes use url: <span class="url"></span>/api/quotes</p>
+    <p>To get random quote use url: <span class="url"></span>/api/quotes/random</p>
+    <p>To get quote by name use url: <span class="url"></span>?name=value</p>
+<script>
+    document.querySelectorAll(".url").forEach(node => node.textContent=window.location.origin);
+</script>
+</body>
+</html>
