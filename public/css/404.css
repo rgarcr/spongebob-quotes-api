@@ -1,0 +1,13 @@
+body {
+    background-color: hsl(201, 100%, 70%);
+}
+
+.error-link{
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: yellow;
+    border-radius: .9rem;
+    padding: .5rem .75rem;
+    font-size: 1.2rem;
+    color: black;
+}

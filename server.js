@@ -1,6 +1,7 @@
 import express from "express"
 import { quotesRouter } from "./routes/quotes.js"
 import cors from "cors"
+import path from "path"
 import "dotenv/config"
 
 const app = express();
@@ -14,7 +15,8 @@ try {
     app.use('/api/quotes', quotesRouter);
 
     app.use((req, res) => {
-        res.status(404).send("404 Error")
+        const errorPagePath = path.join(__dirname, "public", "html", "404.html")
+        res.status(404).sendFile(errorPagePath)
     })
 
     app.listen(process.env.port || PORT, () => {
